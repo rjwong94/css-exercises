@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -82,9 +82,13 @@ button.cancel {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex-shrink: 1;
 }
 
 .option-button {
   display: flex;
+  gap: 5px;
+}
+
+.header, .text, .option-button {
+  margin: 5px;
 }
